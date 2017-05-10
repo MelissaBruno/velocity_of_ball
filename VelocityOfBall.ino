@@ -13,7 +13,7 @@ boolean endFlag;
 
 void setup() {
   Serial.begin(9600);
-  distance = 6;
+  distance = 6;            //In cm
   endFlag = false;
 }
 
@@ -32,7 +32,7 @@ void loop() {
   if(sensor2Value < 830 && endFlag == false){       // If second photoresistor passes threshold, save endTime.
    endTime = millis();
     time = endTime - startTime;
-    timeInSeconds = time/1000;
+    timeInSeconds = time/1000;  //Converts time in milliseconds to seconds
     speed = distance/timeInSeconds;
     Serial.print("Speed: ");
     Serial.print(speed);
