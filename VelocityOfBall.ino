@@ -18,8 +18,8 @@ void setup() {
 }
 
 void loop() {
-  sensor1Value = analogRead(A0);
-  sensor2Value = analogRead(A1);
+  sensor1Value = analogRead(A1);
+  sensor2Value = analogRead(A0);
 
   //Serial.println(sensor1Value);       // Used for determining photoresistor thresholds
   //Serial.println(sensor2Value);
